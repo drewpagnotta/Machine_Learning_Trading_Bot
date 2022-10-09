@@ -9,3 +9,6 @@
 ### Below shows the Actual Returns vs the Strategy Returns of the algorithmic model.
 
 <img width="570" alt="Actual_vs_Strategy_Cumulative_Returns" src="https://user-images.githubusercontent.com/108194033/194478682-0756384d-8b56-479d-aa56-20c7699fe705.png">
+
+### Conclusions of the Baseline Trading Algorithm:
+Judging by the chart above, the algorithmic model follows the same trend as the actual data, but the cumulative returns of the model are lagging below the actual cumulative returns.  This shows with the precision score of buys being 56%, or the percentage of buy predictions that were correct, catching 96% of the buys that were actual buys. This yields an F1 score of .71, somewhat successful.
