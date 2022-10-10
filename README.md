@@ -20,7 +20,7 @@ Judging by the chart above, the algorithmic model follows the same trend as the 
 <img width="445" alt="Screen Shot 2022-10-09 at 11 24 51 PM" src="https://user-images.githubusercontent.com/108194033/194803762-10e4b4a7-f1fe-44dd-883e-db85eb76779a.png">
 
 ### Conclusions of 24-month parameter:
-The precision score didn't change, however the recall was 100% and the F1 Score increased by .01. Taking a larger timeframe of data appears to have helped the strategy model.
+The precision score didn't change, however the recall was 100% and the F1 Score increased by .01. Taking a larger timeframe of data appears to have helped the strategy model, as evident of the increased cumulative returns.
 
 ### Finally, adjusting the SMA of both the Fast and Slow windows is another change to the strategy model that could give us better results. For all of the tests above, SMA_Fast = 4 and SMA_Slow = 100. Using the original 3-month timeframe, and changing the SMA_Fast = 50 and SMA_Slow = 200, the results are shown below.
 
@@ -29,5 +29,5 @@ The precision score didn't change, however the recall was 100% and the F1 Score 
 <img width="435" alt="Screen Shot 2022-10-09 at 11 38 30 PM" src="https://user-images.githubusercontent.com/108194033/194804316-18ad225a-11f9-489a-9fb2-a3bf52f7bbd8.png">
 
 ### Conclusions of the 3-month timeframe with adjusted SMAs:
-We increased the precision and F1 Score and had nearly a perfect recall score. This strategy appears to give us the best results, as the chart clearly shows our cumulative returns are higher.
+We increased the precision and F1 Score and had nearly a perfect recall score, however this strategy shows significantly less cumulative returns.
 
