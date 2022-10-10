@@ -31,3 +31,10 @@ The precision score didn't change, however the recall was 100% and the F1 Score 
 ### Conclusions of the 3-month timeframe with adjusted SMAs:
 We increased the precision and F1 Score and had nearly a perfect recall score, however this strategy shows significantly less cumulative returns.
 
+## LogisticRegression Model:
+### As a final step, we were asked to classify the training model with one of the classifiers. I used LogisticRegression. Below are the results.
+
+<img width="569" alt="Screen Shot 2022-10-09 at 11 52 39 PM" src="https://user-images.githubusercontent.com/108194033/194805557-9ac7c2bb-f152-4434-bf02-a79379b3db9b.png">
+
+### Conclusion:
+This LogisticRegression model appears to outperform all other models and the Actual Returns, as evident of the very higher cumulative returns. However, the drop off from late 2020 to early 2021 is very concerning. Therefore, the original strategy with the SMA_Fast = 4, SMA_Slow = 100 and a 3-month time period gives us the greatest cumulative returns and an upward returns action as the chart completes.
