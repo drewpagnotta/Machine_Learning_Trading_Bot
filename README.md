@@ -12,3 +12,22 @@
 
 ### Conclusions of the Baseline Trading Algorithm:
 Judging by the chart above, the algorithmic model follows the same trend as the actual data, but the cumulative returns of the model are lagging below the actual cumulative returns.  This shows with the precision score of buys being 56%, or the percentage of buy predictions that were correct, catching 96% of the buys that were actual buys. This yields an F1 score of .71, somewhat successful.
+
+### The next step asked to change the timeframe parameters, which I changed from 3 months to 24 months. Below is the reflection of the new parameters Actual Returns vs Strategy Returns chart, as well as the classification report.
+
+<img width="570" alt="Screen Shot 2022-10-09 at 11 23 13 PM" src="https://user-images.githubusercontent.com/108194033/194803599-23609593-dd07-4f6c-9bda-653794c7373f.png">
+
+<img width="445" alt="Screen Shot 2022-10-09 at 11 24 51 PM" src="https://user-images.githubusercontent.com/108194033/194803762-10e4b4a7-f1fe-44dd-883e-db85eb76779a.png">
+
+### Conclusions of 24-month parameter:
+The precision score didn't change, however the recall was 100% and the F1 Score increased by .01. Taking a larger timeframe of data appears to have helped the strategy model.
+
+### Finally, adjusting the SMA of both the Fast and Slow windows is another change to the strategy model that could give us better results. For all of the tests above, SMA_Fast = 4 and SMA_Slow = 100. Using the original 3-month timeframe, and changing the SMA_Fast = 50 and SMA_Slow = 200, the results are shown below.
+
+<img width="571" alt="Screen Shot 2022-10-09 at 11 38 20 PM" src="https://user-images.githubusercontent.com/108194033/194804299-89d31eac-8c80-4a72-ae1e-dc16c610686b.png">
+
+<img width="435" alt="Screen Shot 2022-10-09 at 11 38 30 PM" src="https://user-images.githubusercontent.com/108194033/194804316-18ad225a-11f9-489a-9fb2-a3bf52f7bbd8.png">
+
+### Conclusions of the 3-month timeframe with adjusted SMAs:
+We increased the precision and F1 Score and had nearly a perfect recall score. This strategy appears to give us the best results, as the chart clearly shows our cumulative returns are higher.
+
